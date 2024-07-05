@@ -44,7 +44,14 @@ header {
     height: 1.5px;
     background: #9A5102;
     border-radius: 5px;
+    transform-origin: right;
     transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .navigation .btnLogin-popup {
